@@ -1,84 +1,132 @@
 <!--HTML Portfolio-->
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Kristine's Portfolio</title>
 </head>
 
 <body>
-    <header>    
-            <nav>
-                <ul align="right" style="list-style-type: none; padding: 0; margin: 0;">
-                    <center>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="https://github.com/mcramileux" target="_blank">GitHub</a></li>
-                        <li><a href="#">Contact Me</a></li>
-                    </center>
-                </ul>
-            </nav>
-
-        <h1><center>Kristine's Portfolio</center></h1>
-        <!-- <p><center>Refreshing my coding skills</center></p> -->
+    <header>
+        <h1 class="site-name">Kristine Ramilo</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About the Author</a></li>
+                <li><a href="https://github.com/mcramileux" target="_blank">GitHub</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
         <hr>
     </header>
-    <section id="about-me">
-        <h2><center><u>About Me</u></center></h2>
-        <center>
-        <img src="./img/AR Emoji.jpeg" width="150" height="150" style="center" alt="Kristine's pfp">
-        </center>
-        <p>
+
+    <!--About Me Section // to edit - should include skills, interests, etc.-->
+    <section id="about">
+        <div class="about-content">
+            <h2 class="about-title">About the Author</h2>
             <center>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Integer ut metus nec sapien convallis feugiat. 
-                Nullam tincidunt justo vel arcu vehicula, non fermentum velit fermentum. 
-                Aliquam erat volutpat. Suspendisse potenti. 
-                Nunc vitae magna eget urna congue vestibulum. 
-                Sed gravida arcu vel nulla rhoncus, eget dignissim orci bibendum. 
-                Sed efficitur massa et lectus sodales, nec aliquet velit efficitur. 
-                Sed vel bibendum turpis. Fusce sit amet efficitur justo. 
-                Sed euismod finibus elit nec auctor. Proin vel facilisis ligula. 
-                Phasellus eu lectus nec odio auctor feugiat.
+                <img src="./img/AR Emoji.jpeg" width="250" height="250" style="center" alt="Kristine's pfp">
             </center>
-        </p>
+            <p>
+                <center>
+                    Hello, I'm <a href="https://www.linkedin.com/in/mcramileux/" target="_blank">Kristine</a>! Welcome to my Portfolio.
+
+                    <br/>
+                    <br/>
+                    I am excited to learn more about web development and design.<br/>
+                    I am also interested in learning more about UI/UX design and graphic design.<br/>
+                    <br/>
+                    In my <em>first year</em> on this coding journey, I've passionately embraced challenges and learning opportunities.<br/> 
+                    This website will eventually showcase <u>my future projects</u>.<br/>
+                    <br/>
+                    Join me as I navigate the dynamic world of programming, turning concepts into reality.<br/> 
+                    Thank you for exploring my portfolio, where curiosity meets creation!<br/>
+                </center>
+            </p>
+        </div>
     </section>
 
+    <section id="skills">
+        <div class="skills-content">
+            <h4 class="about-title"><u><center>Skills</center></u></h4>
+            <table border="8">
+                <thead>
+                    <tr>
+                        <th>Technical Skills</th>
+                        <th>Soft Skills</th>
+                        <th>Tools</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>HTML</td>
+                    <td>Customer Service</td>
+                    <td>Git</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Teamwork</td>
+                    <td>GitHub</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Adaptability</td>
+                    <td>VS Code</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>Communication</td>
+                    <td>CodePen</td>
+                </tr>
+                <tr>
+                    <td>Bootstrap</td>
+                    <td>Problem Solving</td>
+                    <td><s>Heroku</s></td>
+                </tr> 
+            </table>
+        </section>
+    
     <section id="contact">
         <hr>
-        <h2><center><u>Contact Me</u></center></h2>
+        <h2>
+            <center><u>Contact Me</u></center>
+        </h2>
         <form>
-        <ul style="list-style-type: none;">
-            <center>
-            <li>
-                <label class="text-right" for="name">Name:</label>
-                <input type="text" id="name" name="user-name">
-            </li>
-            <br>
-            <li>
-                <label class="text-right" for="name">Email:</label>
-                <input type="text" id="name" name="user-email">
-            </li>
-            <!-- <li>
+            <ul style="list-style-type: none;">
+                <center>
+                    <li>
+                        <label class="text-right" for="name">Name:</label>
+                        <input type="text" id="name" name="user-name">
+                    </li>
+                    <br>
+                    <li>
+                        <label class="text-right" for="name">Email:</label>
+                        <input type="text" id="name" name="user-email">
+                    </li>
+                    <br>
+                    <li>
                 <label class="text-right" for="name">Message:</label>
                 <input type="text" id="name" name="user-email">
-            </li> -->
-        </center>
-        </ul> 
+            </li>
+                </center>
+            </ul>
             <div>
                 <center>
                     <button type="submit">SEND</button>
                 </center>
             </div>
         </form>
-    <hr>
+        <hr>
     </section>
+
+    <!--Footer Section-->
     <footer>
         <center>
-            <p>&copy; 20/11/2023 Kristine R</p>
+            <p>&copy; Kristine Ramilo</p>
         </center>
     </footer>
 </body>
+
 </html>
